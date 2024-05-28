@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javaapplication2.FXMLController">
+   <children>
+      <HBox alignment="CENTER" layoutY="477.0" prefHeight="70.0" prefWidth="825.0" spacing="30.0" style="-fx-background-color: gray;">
+         <children>
+            <Button fx:id="btnKonec" mnemonicParsing="false" onAction="#onKonec" text="Konec" />
+            <Button fx:id="btnPridej" mnemonicParsing="false" onAction="#onPridej" text="Přidej" />
+            <Button fx:id="btnOdeber" mnemonicParsing="false" onAction="#onOdeber" text="Odeber" />
+            <Button fx:id="btnOdeberVse" mnemonicParsing="false" onAction="#onOdeberVse" text="Odeber vše" />
+            <Button fx:id="btnUloz" mnemonicParsing="false" onAction="#onUloz" text="Ulož" />
+            <Button fx:id="btnNacti" mnemonicParsing="false" onAction="#onNacti" text="Načti" />
+         </children>
+      </HBox>
+      <ListView fx:id="lvSlova" prefHeight="476.0" prefWidth="200.0" />
+      <Pane fx:id="grafPane" layoutX="200.0" prefHeight="476.0" prefWidth="624.0" style="-fx-border-color: black;" />
+   </children>
+</AnchorPane>
