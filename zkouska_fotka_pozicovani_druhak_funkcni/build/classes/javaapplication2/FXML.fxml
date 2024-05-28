@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+
+<AnchorPane id="AnchorPane" fx:id="Aplikace" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javaapplication2.FXMLController">
+   <children>
+      <Pane fx:id="paneOvladani" layoutX="400.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #606060;" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Rectangle arcHeight="30.0" arcWidth="30.0" fill="#1f93ff00" height="182.0" layoutX="29.0" layoutY="60.0" stroke="WHITE" strokeType="INSIDE" width="144.0" />
+            <CheckBox fx:id="chHorni" layoutX="86.0" layoutY="83.0" mnemonicParsing="false" />
+            <CheckBox fx:id="chLevy" layoutX="47.0" layoutY="132.0" mnemonicParsing="false" />
+            <CheckBox fx:id="chDolni" layoutX="87.0" layoutY="190.0" mnemonicParsing="false" />
+            <CheckBox fx:id="chPravy" layoutX="124.0" layoutY="132.0" mnemonicParsing="false" />
+            <Rectangle arcHeight="30.0" arcWidth="30.0" fill="#1f93ff00" height="127.0" layoutX="29.0" layoutY="252.0" stroke="WHITE" strokeType="INSIDE" width="144.0" />
+            <Rectangle fx:id="barvaRect" fill="#1f93ff00" height="88.0" layoutX="60.0" layoutY="261.0" stroke="BLACK" strokeType="INSIDE" width="82.0" />
+            <Label fx:id="lbPixel" layoutX="44.0" layoutY="349.0" text="Label" />
+         </children>
+      </Pane>
+      <Pane fx:id="paneMenu" prefHeight="55.0" prefWidth="600.0" style="-fx-background-color: #606060;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button fx:id="btnFile" layoutX="43.0" layoutY="12.0" mnemonicParsing="false" onAction="#onFile" text="FIle" />
+            <Button fx:id="btnReset" layoutX="100.0" layoutY="12.0" mnemonicParsing="false" onAction="#onReset" text="Reset" />
+         </children>
+      </Pane>
+      <Pane fx:id="plochaPane" layoutX="7.0" layoutY="55.0" prefHeight="345.0" prefWidth="401.0" style="-fx-background-color: #606060;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="199.0" AnchorPane.topAnchor="55.0" />
+   </children>
+</AnchorPane>
